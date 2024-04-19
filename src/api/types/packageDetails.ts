@@ -2,7 +2,7 @@ export interface PackageDetails {
   name: string;
   description: string;
   readme: string;
-  auther: {
+  author: {
     email: string;
     name: string;
   };
