@@ -3,7 +3,8 @@ import Root from "./pages/Root";
 import HomePage from "./pages/HomePage";
 import SearchPage from "./pages/search/SearchPage";
 import { searchLoader } from "./pages/search/searchLoader";
-import DetailPage from "./pages/DetailsPage";
+import DetailPage from "./pages/details/DetailsPage";
+import { detailsLoader } from "./pages/details/detailsLoader";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       {
         path: "/packages/:name",
         element: <DetailPage />,
+        loader: detailsLoader,
       },
     ],
   },
